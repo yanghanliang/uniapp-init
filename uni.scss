@@ -4,4 +4,69 @@
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
 @import 'uview-ui/theme.scss';
+@import './static/css/index.scss';
+
+/* 颜色规范 */
+$color-title: #333; // 用于标题、描述文字、正文
+$color-sub-title: #999; // 用于副标题、提示信息
+$color-h1: #161823;
+$color-des: #666; // 用于描述文字、正文、副标题
+$color-button: #c5c5c5; // 灰色按钮
+$color-line: #e5e5e5; // 分割线
+$color-bg: #f0f0f0; // 背景色
+$color-active: #cd3728; // 高亮色
+$color-border: #c5c5c5; // 边框色
+
+// 特殊色
+$color-a: #f6deb7;
+
+/* 字体规范*/
+$h1: 34upx;
+$h2: 32upx;
+$h3: 30upx;
+$h4: 28upx;
+$h5: 26upx;
+$h6: 24upx;
+$h7: 22upx;
+$h8: 20upx;
+
+/* 间距规范 */
+$page-pd: 24upx; // 页面两边边距
+$box-pd: 20upx; // 块元素的内边距
+$box-margin: 20upx; // 卡片之间和列表之间间距
+
+/* 按钮高度规范 */
+$button-h1: 60upx;
+$button-h2: 80upx;
+$button-h3: 88upx;
+
+/* 圆角 */
+$br-a: 20upx;
+$br-b: 30upx;
+$br-c: 40upx;
+
+/* 层级 */
+$zi-select: 6; // 下拉框
+$zi-block: 66; // 块
+$zi-popup: 666; // 弹窗
+
+
+.page-layout {
+  min-height: 100%;
+  padding: 0 $page-pd;
+  background-color: $color-bg;
+}
+
+@mixin bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin jz {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 

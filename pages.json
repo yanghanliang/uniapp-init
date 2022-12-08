@@ -6,7 +6,13 @@
 		{
 			"path": "pages/main/main",
 			"style": {
-				"navigationBarTitleText": "test"
+				"navigationBarTitleText": ""
+			}
+		},
+    {
+			"path": "pages/makeFriends/index",
+			"style": {
+				"navigationBarTitleText": "交友"
 			}
 		}
 	],

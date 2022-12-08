@@ -21,6 +21,12 @@ import httpInterceptor from '@/common/http.interceptor.js'
 // http接口API抽离，免于写url或者一些固定的参数
 import httpApi from '@/common/http.api.js'
 
+// 引用全局公共的mixins
+import mixins from '@/common/mixins/index'
+
+// 引入全局公共组件
+import '@/components/public/index'
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'
@@ -39,6 +45,9 @@ Vue.mixin(mpShare)
 
 // VueI18n
 Vue.use(VueI18n)
+
+// 引用全局公共的mixins
+Vue.mixin(mixins)
 
 const i18n = new VueI18n({
   // 默认语言
